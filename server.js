@@ -9,64 +9,100 @@ const pool = databaseUrl ? new Pool({ connectionString: databaseUrl }) : null;
 
 const products = [
   {
-    id: "guardian-del-bosque",
-    name: "Guardián del Bosque",
+    id: "guardian-del-maguey",
+    name: "Guardián del Maguey",
     collection: "bosque",
-    price: 28500,
-    image: "assets/product-guardian-del-bosque.png",
-    description: "Figura protectora con geometrías vegetales, mirada serena y acabado profundo en madera natural.",
-    materials: "Madera tallada, pigmentos minerales, cera natural",
-    dimensions: "28 x 18 x 32 cm",
-    craft_time: "46 horas",
-    story: "Nació como una presencia silenciosa para custodiar bibliotecas, vestíbulos y espacios de contemplación."
+    price: 18900,
+    image: "assets/catalogo/guardian-del-maguey.jpg",
+    description: "Escultura vegetal con figura protectora, hojas talladas y acentos intensos en verde, rosa y oro.",
+    materials: "Madera tallada, pigmentos acrílicos, fibras naturales y sellado mate",
+    dimensions: "34 x 22 x 30 cm",
+    craft_time: "48 horas",
+    story: "Esta pieza surge como un pequeño santuario de mesa: un maguey imaginario que abre sus hojas para resguardar una presencia silenciosa."
   },
   {
-    id: "criatura-nocturna",
-    name: "Criatura Nocturna",
+    id: "vigia-nocturno",
+    name: "Vigía Nocturno",
     collection: "noche",
-    price: 19800,
-    image: "assets/product-criatura-nocturna.png",
-    description: "Pieza de luz baja, creada para revelar tonos oscuros, oro suave y detalles de pincel.",
-    materials: "Madera de copal, acrílico artesanal, sellado mate",
-    dimensions: "22 x 16 x 28 cm",
-    craft_time: "38 horas",
-    story: "La figura mira como si reconociera los secretos de una casa al anochecer."
-  },
-  {
-    id: "espiritu-del-sol",
-    name: "Espíritu del Sol",
-    collection: "sol",
-    price: 26000,
-    image: "assets/product-espiritu-del-sol.png",
-    description: "Escultura radiante con líneas solares, presencia ceremonial y detalles dorados.",
-    materials: "Madera tallada, pigmento terracota, hoja metálica suave",
-    dimensions: "30 x 10 x 30 cm",
-    craft_time: "52 horas",
-    story: "Esta pieza fue creada como un punto de calor visual para interiores con carácter."
-  },
-  {
-    id: "canto-de-copal",
-    name: "Canto de Copal",
-    collection: "bosque",
-    price: 14600,
-    image: "assets/product-canto-de-copal.png",
-    description: "Figura compacta de colección con curvas suaves y pintura fina en tonos tierra.",
-    materials: "Madera ligera, pintura a mano, barniz satinado",
-    dimensions: "18 x 12 x 24 cm",
-    craft_time: "31 horas",
-    story: "Su forma recuerda un canto suspendido: pequeña, precisa y llena de movimiento."
-  },
-  {
-    id: "umbral-de-lluvia",
-    name: "Umbral de Lluvia",
-    collection: "noche",
-    price: 22400,
-    image: "assets/product-umbral-de-lluvia.png",
-    description: "Escultura de curvas fluidas, verdes profundos y acentos dorados sobre madera vista.",
-    materials: "Madera tallada, pigmento verde profundo, cera mineral",
-    dimensions: "24 x 14 x 27 cm",
+    price: 22800,
+    image: "assets/catalogo/vigia-nocturno.jpg",
+    description: "Figura oscura de postura baja, mirada alerta y patrones finos que brillan con luz rasante.",
+    materials: "Madera de copal, pigmento negro profundo, acrílico fino y cera natural",
+    dimensions: "42 x 13 x 24 cm",
     craft_time: "44 horas",
-    story: "Fue imaginada como la pieza que aparece justo antes de la tormenta."
+    story: "Fue concebida como una presencia de umbral: discreta a primera vista, pero llena de signos cuando el ojo se acerca."
+  },
+  {
+    id: "mensajero-del-sol",
+    name: "Mensajero del Sol",
+    collection: "sol",
+    price: 26500,
+    image: "assets/catalogo/mensajero-del-sol.jpg",
+    description: "Criatura luminosa de orejas altas, cuerpo amarillo y patrones azules con presencia ceremonial.",
+    materials: "Madera tallada, pigmentos minerales, acrílico artístico y barniz satinado",
+    dimensions: "48 x 12 x 36 cm",
+    craft_time: "56 horas",
+    story: "El gesto frontal de la pieza recuerda a un emisario que llega con una señal de luz."
+  },
+  {
+    id: "caracol-de-copal",
+    name: "Caracol de Copal",
+    collection: "bosque",
+    price: 21600,
+    image: "assets/catalogo/caracol-de-copal.jpg",
+    description: "Pieza de espiral morada, cuerpo texturizado y detalles naranjas que evocan un objeto ritual.",
+    materials: "Madera ligera, pigmentos violeta y terracota, pincel fino y sellado satinado",
+    dimensions: "32 x 15 x 21 cm",
+    craft_time: "41 horas",
+    story: "La espiral fue pintada como una memoria en movimiento para vitrinas, libreros o espacios de contemplación."
+  },
+  {
+    id: "elefante-de-agua",
+    name: "Elefante de Agua",
+    collection: "noche",
+    price: 29400,
+    image: "assets/catalogo/elefante-de-agua.jpg",
+    description: "Figura de gran presencia con azules profundos, orejas violetas y geometrías minuciosas.",
+    materials: "Madera tallada, pigmentos azul petróleo y violeta, acabado semimate",
+    dimensions: "40 x 16 x 27 cm",
+    craft_time: "62 horas",
+    story: "El cuerpo fue tratado como un mapa de agua nocturna: círculos, líneas y pequeños puntos que acompañan el volumen."
+  },
+  {
+    id: "venado-celeste",
+    name: "Venado Celeste",
+    collection: "sol",
+    price: 24800,
+    image: "assets/catalogo/venado-celeste.jpg",
+    description: "Escultura vertical de cornamenta azul, orejas rosadas y patrones finos en tonos arena.",
+    materials: "Madera tallada, pigmento azul cobalto, pintura a mano y cera protectora",
+    dimensions: "22 x 14 x 38 cm",
+    craft_time: "49 horas",
+    story: "Su silueta mira hacia arriba, como si escuchara algo fuera de escena."
+  },
+  {
+    id: "guardian-del-cerro",
+    name: "Guardián del Cerro",
+    collection: "sol",
+    price: 31000,
+    image: "assets/catalogo/guardian-del-cerro.jpg",
+    description: "Figura de cuernos amplios, cuerpo café y acentos turquesa con mirada de pieza ceremonial.",
+    materials: "Madera tallada, pigmentos tierra, turquesa y oro suave, barniz mate",
+    dimensions: "36 x 18 x 31 cm",
+    craft_time: "58 horas",
+    story: "Esta obra se construye alrededor de sus cuernos: dos curvas que parecen recoger aire, sol y memoria."
+  },
+  {
+    id: "iguana-turquesa",
+    name: "Iguana Turquesa",
+    collection: "bosque",
+    price: 17400,
+    image: "assets/catalogo/iguana-turquesa.jpg",
+    description: "Pieza horizontal de líneas extendidas, color turquesa y patrones circulares sobre el lomo.",
+    materials: "Madera de copal, pigmento turquesa, acrílico de color y sellado satinado",
+    dimensions: "46 x 10 x 13 cm",
+    craft_time: "36 horas",
+    story: "Baja, serena y alargada, esta pieza funciona como una línea de color para repisas, consolas o mesas."
   }
 ];
 

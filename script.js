@@ -1,63 +1,139 @@
 const products = [
   {
-    id: "guardian-del-bosque",
-    name: "Guardián del Bosque",
+    id: "guardian-del-maguey",
+    name: "Guardián del Maguey",
     collection: "bosque",
-    price: 28500,
-    image: "assets/product-guardian-del-bosque.png",
-    description: "Figura protectora con geometrías vegetales, mirada serena y acabado profundo en madera natural.",
-    materials: "Madera tallada, pigmentos minerales, cera natural",
-    dimensions: "28 x 18 x 32 cm",
-    time: "46 horas",
-    story: "Nació como una presencia silenciosa para custodiar bibliotecas, vestíbulos y espacios de contemplación. Sus trazos siguen la idea de un bosque interior: raíces, caminos y señales que solo aparecen cuando la luz toca la superficie."
+    price: 18900,
+    image: "assets/catalogo/guardian-del-maguey.jpg",
+    gallery: [
+      "assets/catalogo/guardian-del-maguey.jpg",
+      "assets/catalogo/guardian-del-maguey-abierto.jpg",
+      "assets/catalogo/guardian-del-maguey-detalle.jpg"
+    ],
+    description: "Escultura vegetal con figura protectora, hojas talladas y acentos intensos en verde, rosa y oro.",
+    materials: "Madera tallada, pigmentos acrílicos, fibras naturales y sellado mate",
+    dimensions: "34 x 22 x 30 cm",
+    time: "48 horas",
+    story: "Esta pieza surge como un pequeño santuario de mesa: un maguey imaginario que abre sus hojas para resguardar una presencia silenciosa. Su color se trabaja por capas para que cada hoja conserve textura, sombra y movimiento."
   },
   {
-    id: "criatura-nocturna",
-    name: "Criatura Nocturna",
+    id: "vigia-nocturno",
+    name: "Vigía Nocturno",
     collection: "noche",
-    price: 19800,
-    image: "assets/product-criatura-nocturna.png",
-    description: "Pieza de luz baja, creada para revelar tonos oscuros, oro suave y detalles de pincel.",
-    materials: "Madera de copal, acrílico artesanal, sellado mate",
-    dimensions: "22 x 16 x 28 cm",
-    time: "38 horas",
-    story: "La figura mira como si reconociera los secretos de una casa al anochecer. Fue pintada con capas muy delgadas para que el negro, el índigo y la terracota respiren sobre la veta."
-  },
-  {
-    id: "espiritu-del-sol",
-    name: "Espíritu del Sol",
-    collection: "sol",
-    price: 26000,
-    image: "assets/product-espiritu-del-sol.png",
-    description: "Escultura radiante con líneas solares, presencia ceremonial y detalles dorados.",
-    materials: "Madera tallada, pigmento terracota, hoja metálica suave",
-    dimensions: "30 x 10 x 30 cm",
-    time: "52 horas",
-    story: "Esta pieza fue creada como un punto de calor visual. Sus formas se abren hacia afuera para evocar amaneceres, patios de barro y el instante en que una sombra empieza a retroceder."
-  },
-  {
-    id: "canto-de-copal",
-    name: "Canto de Copal",
-    collection: "bosque",
-    price: 14600,
-    image: "assets/product-canto-de-copal.png",
-    description: "Figura compacta de colección con curvas suaves y pintura fina en tonos tierra.",
-    materials: "Madera ligera, pintura a mano, barniz satinado",
-    dimensions: "18 x 12 x 24 cm",
-    time: "31 horas",
-    story: "Su forma recuerda un canto suspendido: pequeña, precisa y llena de movimiento. Está pensada para convivir con libros, cerámica, textiles y objetos personales."
-  },
-  {
-    id: "umbral-de-lluvia",
-    name: "Umbral de Lluvia",
-    collection: "noche",
-    price: 22400,
-    image: "assets/product-umbral-de-lluvia.png",
-    description: "Escultura de curvas fluidas, verdes profundos y acentos dorados sobre madera vista.",
-    materials: "Madera tallada, pigmento verde profundo, cera mineral",
-    dimensions: "24 x 14 x 27 cm",
+    price: 22800,
+    image: "assets/catalogo/vigia-nocturno.jpg",
+    gallery: [
+      "assets/catalogo/vigia-nocturno.jpg",
+      "assets/catalogo/vigia-nocturno-perfil.jpg",
+      "assets/catalogo/vigia-nocturno-detalle.jpg"
+    ],
+    description: "Figura oscura de postura baja, mirada alerta y patrones finos que brillan con luz rasante.",
+    materials: "Madera de copal, pigmento negro profundo, acrílico fino y cera natural",
+    dimensions: "42 x 13 x 24 cm",
     time: "44 horas",
-    story: "Fue imaginada como la pieza que aparece justo antes de la tormenta. Sus líneas cruzadas hablan de agua, tierra húmeda y una calma antigua."
+    story: "Fue concebida como una presencia de umbral: discreta a primera vista, pero llena de signos cuando el ojo se acerca. La melena clara y los puntos de color crean una tensión elegante entre misterio y movimiento."
+  },
+  {
+    id: "mensajero-del-sol",
+    name: "Mensajero del Sol",
+    collection: "sol",
+    price: 26500,
+    image: "assets/catalogo/mensajero-del-sol.jpg",
+    gallery: [
+      "assets/catalogo/mensajero-del-sol.jpg",
+      "assets/catalogo/mensajero-del-sol-frente.jpg",
+      "assets/catalogo/mensajero-del-sol-detalle.jpg"
+    ],
+    description: "Criatura luminosa de orejas altas, cuerpo amarillo y patrones azules con presencia ceremonial.",
+    materials: "Madera tallada, pigmentos minerales, acrílico artístico y barniz satinado",
+    dimensions: "48 x 12 x 36 cm",
+    time: "56 horas",
+    story: "El gesto frontal de la pieza recuerda a un emisario que llega con una señal de luz. La paleta amarilla, verde y azul fue elegida para dar una sensación de amanecer sobre madera viva."
+  },
+  {
+    id: "caracol-de-copal",
+    name: "Caracol de Copal",
+    collection: "bosque",
+    price: 21600,
+    image: "assets/catalogo/caracol-de-copal.jpg",
+    gallery: [
+      "assets/catalogo/caracol-de-copal.jpg",
+      "assets/catalogo/caracol-de-copal-frente.jpg",
+      "assets/catalogo/caracol-de-copal-perfil.jpg"
+    ],
+    description: "Pieza de espiral morada, cuerpo texturizado y detalles naranjas que evocan un objeto ritual.",
+    materials: "Madera ligera, pigmentos violeta y terracota, pincel fino y sellado satinado",
+    dimensions: "32 x 15 x 21 cm",
+    time: "41 horas",
+    story: "La espiral fue pintada como una memoria en movimiento. Es una obra compacta, ideal para vitrinas, libreros o espacios de contemplación donde el detalle pueda observarse de cerca."
+  },
+  {
+    id: "elefante-de-agua",
+    name: "Elefante de Agua",
+    collection: "noche",
+    price: 29400,
+    image: "assets/catalogo/elefante-de-agua.jpg",
+    gallery: [
+      "assets/catalogo/elefante-de-agua.jpg",
+      "assets/catalogo/elefante-de-agua-marcha.jpg",
+      "assets/catalogo/elefante-de-agua-detalle.jpg"
+    ],
+    description: "Figura de gran presencia con azules profundos, orejas violetas y geometrías minuciosas.",
+    materials: "Madera tallada, pigmentos azul petróleo y violeta, acabado semimate",
+    dimensions: "40 x 16 x 27 cm",
+    time: "62 horas",
+    story: "El cuerpo fue tratado como un mapa de agua nocturna: círculos, líneas y pequeños puntos que acompañan el volumen. La pieza se siente sólida, ceremonial y tranquila."
+  },
+  {
+    id: "venado-celeste",
+    name: "Venado Celeste",
+    collection: "sol",
+    price: 24800,
+    image: "assets/catalogo/venado-celeste.jpg",
+    gallery: [
+      "assets/catalogo/venado-celeste.jpg",
+      "assets/catalogo/venado-celeste-frente.jpg",
+      "assets/catalogo/venado-celeste-detalle.jpg"
+    ],
+    description: "Escultura vertical de cornamenta azul, orejas rosadas y patrones finos en tonos arena.",
+    materials: "Madera tallada, pigmento azul cobalto, pintura a mano y cera protectora",
+    dimensions: "22 x 14 x 38 cm",
+    time: "49 horas",
+    story: "Su silueta mira hacia arriba, como si escuchara algo fuera de escena. La pieza combina delicadeza y altura, pensada para espacios donde una obra pequeña puede sostener mucha atención."
+  },
+  {
+    id: "guardian-del-cerro",
+    name: "Guardián del Cerro",
+    collection: "sol",
+    price: 31000,
+    image: "assets/catalogo/guardian-del-cerro.jpg",
+    gallery: [
+      "assets/catalogo/guardian-del-cerro.jpg",
+      "assets/catalogo/guardian-del-cerro-frente.jpg",
+      "assets/catalogo/guardian-del-cerro-detalle.jpg"
+    ],
+    description: "Figura de cuernos amplios, cuerpo café y acentos turquesa con mirada de pieza ceremonial.",
+    materials: "Madera tallada, pigmentos tierra, turquesa y oro suave, barniz mate",
+    dimensions: "36 x 18 x 31 cm",
+    time: "58 horas",
+    story: "Esta obra se construye alrededor de sus cuernos: dos curvas que parecen recoger aire, sol y memoria. Los círculos laterales y los trazos finos acentúan la sensación de pieza de resguardo."
+  },
+  {
+    id: "iguana-turquesa",
+    name: "Iguana Turquesa",
+    collection: "bosque",
+    price: 17400,
+    image: "assets/catalogo/iguana-turquesa.jpg",
+    gallery: [
+      "assets/catalogo/iguana-turquesa.jpg",
+      "assets/catalogo/iguana-turquesa-lateral.jpg",
+      "assets/catalogo/iguana-turquesa-detalle.jpg"
+    ],
+    description: "Pieza horizontal de líneas extendidas, color turquesa y patrones circulares sobre el lomo.",
+    materials: "Madera de copal, pigmento turquesa, acrílico de color y sellado satinado",
+    dimensions: "46 x 10 x 13 cm",
+    time: "36 horas",
+    story: "Baja, serena y alargada, esta pieza funciona como una línea de color en repisas, consolas o mesas. Su cuerpo concentra pequeños ritmos circulares que se descubren lentamente."
   }
 ];
 
@@ -207,17 +283,16 @@ function renderProductDetail() {
   if (!root) return;
   const id = new URLSearchParams(window.location.search).get("id") || products[0].id;
   const product = products.find((item) => item.id === id) || products[0];
-  const alternates = products.filter((item) => item.id !== product.id).slice(0, 2);
-  const gallery = [product, ...alternates];
+  const gallery = [...new Set([product.image, ...(product.gallery || [])])];
 
   document.title = `${product.name} | Tallador de Sueños`;
   root.innerHTML = `
     <div class="product-gallery reveal">
       <img class="product-main-image" src="${product.image}" alt="${product.name}" data-main-product-image>
       <div class="thumb-row">
-        ${gallery.map((item, index) => `
-          <button class="${index === 0 ? "active" : ""}" type="button" data-thumb="${item.image}" aria-label="Ver imagen ${index + 1}">
-            <img src="${item.image}" alt="${item.name}">
+        ${gallery.map((image, index) => `
+          <button class="${index === 0 ? "active" : ""}" type="button" data-thumb="${image}" aria-label="Ver imagen ${index + 1} de ${product.name}">
+            <img src="${image}" alt="${product.name}">
           </button>
         `).join("")}
       </div>
