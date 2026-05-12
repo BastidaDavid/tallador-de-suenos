@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout de Tallador de Sueños con métodos de pago modernos preparados.">
+  <title>Checkout | Tallador de Sueños</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header scrolled" data-header>
+    <a class="brand" href="index.html" aria-label="Tallador de Sueños inicio">
+      <span class="brand-mark">TS</span>
+      <span>Tallador<br>de Sueños</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir navegación" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="shop.html">Colección</a>
+      <a href="about.html">Historia</a>
+      <a href="contact.html">Contacto</a>
+      <a href="cart.html" class="cart-link">Carrito <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="checkout-layout">
+    <section class="checkout-panel reveal">
+      <p class="section-kicker">Checkout</p>
+      <h1>Pago en línea.</h1>
+      <p>Completa tus datos para reservar la pieza con una experiencia de pago segura, clara y preparada para coleccionistas internacionales.</p>
+
+      <div class="payment-grid" aria-label="Métodos de pago">
+        <div class="payment-option">Stripe <small>Tarjetas</small></div>
+        <div class="payment-option">Apple Pay <small>Wallet</small></div>
+        <div class="payment-option">PayPal <small>Cuenta</small></div>
+        <div class="payment-option">Google Pay <small>Wallet</small></div>
+      </div>
+
+      <form class="checkout-form" data-checkout-form>
+        <div class="field-grid">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Correo</label>
+            <input id="email" type="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="field-grid">
+          <div class="field">
+            <label for="country">País</label>
+            <input id="country" name="country" autocomplete="country-name" required>
+          </div>
+          <div class="field">
+            <label for="payment">Método</label>
+            <select id="payment" name="payment" required>
+              <option value="stripe">Stripe</option>
+              <option value="apple_pay">Apple Pay</option>
+              <option value="paypal">PayPal</option>
+              <option value="google_pay">Google Pay</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="address">Dirección</label>
+          <textarea id="address" name="address" autocomplete="street-address" required></textarea>
+        </div>
+        <button class="button primary full" type="submit">Finalizar pedido</button>
+        <div class="form-status" data-form-status aria-live="polite"></div>
+      </form>
+    </section>
+
+    <aside class="summary-card reveal" data-checkout-summary></aside>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">TS</span>
+        <span>Tallador<br>de Sueños</span>
+      </a>
+      <p>Sueños tallados a mano.</p>
+    </div>
+    <div>
+      <h4>Colecciones</h4>
+      <a href="shop.html?collection=bosque">Guardianes del Bosque</a>
+      <a href="shop.html?collection=noche">Criaturas Nocturnas</a>
+      <a href="shop.html?collection=sol">Espíritus del Sol</a>
+    </div>
+    <div>
+      <h4>Atención</h4>
+      <a href="contact.html">Contacto</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="cart.html">Carrito</a>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>estudio@talladordesuenos.mx</p>
+      <p>Envíos internacionales bajo curaduría.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

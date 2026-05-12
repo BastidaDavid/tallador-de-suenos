@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto de Tallador de Sueños para compras, encargos y curaduría internacional.">
+  <title>Contacto | Tallador de Sueños</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header scrolled" data-header>
+    <a class="brand" href="index.html" aria-label="Tallador de Sueños inicio">
+      <span class="brand-mark">TS</span>
+      <span>Tallador<br>de Sueños</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir navegación" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="shop.html">Colección</a>
+      <a href="about.html">Historia</a>
+      <a href="contact.html">Contacto</a>
+      <a href="cart.html" class="cart-link">Carrito <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="contact-layout">
+    <aside class="contact-card reveal">
+      <p class="section-kicker">Contacto</p>
+      <h2>Adquisiciones, encargos y curaduría.</h2>
+      <p>Para coleccionistas, interioristas, galerías y clientes privados. Respondemos con disponibilidad de piezas, tiempos de envío y opciones de encargo.</p>
+      <p><strong>estudio@talladordesuenos.mx</strong></p>
+      <p>Ciudad de México · Envíos internacionales</p>
+    </aside>
+
+    <section class="checkout-panel reveal">
+      <h1>Escríbenos.</h1>
+      <form class="checkout-form" data-contact-form>
+        <div class="field-grid">
+          <div class="field">
+            <label for="contact-name">Nombre</label>
+            <input id="contact-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="contact-email">Correo</label>
+            <input id="contact-email" type="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="interest">Interés</label>
+          <select id="interest" name="interest">
+            <option>Comprar una pieza</option>
+            <option>Encargo privado</option>
+            <option>Colaboración con galería</option>
+            <option>Envío internacional</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button class="button primary full" type="submit">Enviar mensaje</button>
+        <div class="form-status" data-form-status aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">TS</span>
+        <span>Tallador<br>de Sueños</span>
+      </a>
+      <p>Sueños tallados a mano.</p>
+    </div>
+    <div>
+      <h4>Colecciones</h4>
+      <a href="shop.html?collection=bosque">Guardianes del Bosque</a>
+      <a href="shop.html?collection=noche">Criaturas Nocturnas</a>
+      <a href="shop.html?collection=sol">Espíritus del Sol</a>
+    </div>
+    <div>
+      <h4>Atención</h4>
+      <a href="contact.html">Contacto</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="cart.html">Carrito</a>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>estudio@talladordesuenos.mx</p>
+      <p>Envíos internacionales bajo curaduría.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "tallador-de-suenos",
+  "version": "1.0.0",
+  "description": "Plataforma e-commerce artesanal premium para Tallador de Sueños.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}
