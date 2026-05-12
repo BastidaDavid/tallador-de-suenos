@@ -11,13 +11,3 @@ services:
         value: production
       - key: PORT
         value: 10000
-      - key: DATABASE_URL
-        fromDatabase:
-          name: tallador-de-suenos-db
-          property: connectionString
-
-databases:
-  - name: tallador-de-suenos-db
-    plan: free
-    databaseName: tallador_de_suenos
-    user: tallador_user
